@@ -8,7 +8,11 @@ from fastapi.middleware.cors import CORSMiddleware
 
 BASE_DIR = Path(__file__).resolve().parent
 
+<<<<<<< HEAD
 model = joblib.load('Mental_Health_Model.pkl')
+=======
+model = joblib.dump('Mental_Health_Model.pkl')
+>>>>>>> 725b1e12056401327e6f00e591d98020a52ed29e
 top_countries = ['Other','India','USA','Canada','Australia','UK','Germany','Mexico','Turkey','France']
 
 app = FastAPI()
@@ -74,4 +78,8 @@ def predict(data: StudentData):
    }])
 
    prediction = model.predict(input_row)[0] #6.77
+<<<<<<< HEAD
    return PredictionResponse(predicted_mental_health_score=round(float(prediction),2))
+=======
+   return PredictionResponse(predicted_mental_health_score=round(float(prediction),2))
+>>>>>>> 725b1e12056401327e6f00e591d98020a52ed29e

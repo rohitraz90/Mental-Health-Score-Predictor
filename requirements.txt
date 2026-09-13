@@ -6,4 +6,8 @@ pandas
 scikit-learn==1.9.1
 streamlit>=1.32
 requests>=2.31
+<<<<<<< HEAD
 plotly>=5.20
+=======
+plotly>=5.20
+>>>>>>> 725b1e12056401327e6f00e591d98020a52ed29e
